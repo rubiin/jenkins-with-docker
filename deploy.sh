@@ -1,6 +1,4 @@
 #! /bin/sh
 docker rmi -f $(docker images -f "dangling=true" -q)
-docker-compose down
-docker-compose rm -f
-docker-compose build
-docker-compose up --build -d
+docker build . -t testimage
+docker run -d -p 8000:8000 --name testimage testimage
