@@ -3,7 +3,7 @@
 This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
 First
 ```sh
-docker pull rubin/jenkins
+docker pull rubiin/jenkins
 ```
 Then run jenkins , change the port to what you want it to run
 ```sh
