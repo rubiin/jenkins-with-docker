@@ -1,8 +1,14 @@
 ### Node Express template project
 
 This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
-
-Improvements can be proposed in the [original project](https://gitlab.com/gitlab-org/project-templates/express).
+First
+```sh
+docker pull rubin/jenkins
+```
+Then run jenkins , change the port to what you want it to run
+```sh
+docker run   --rm   -u root  -d -p 8080:8080   -v jenkins-data:/var/jenkins_home   -v /var/run/docker.sock:/var/run/docker.sock   -v "$HOME":/home   rubiin/jenkins
+```
 
 ### CI/CD with Auto DevOps
 
